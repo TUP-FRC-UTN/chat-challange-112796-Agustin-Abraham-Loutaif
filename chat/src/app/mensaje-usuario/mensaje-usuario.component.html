@@ -1,0 +1,8 @@
+<div class="card">
+    <div class="card-header">
+        Usuario: {{user}}
+      </div>
+      <h6>Mensaje</h6>    
+      <textarea class="form-control" [value]="texto ? texto : '' " (input)="definirMensaje($event)"></textarea>
+      <button class="btn btn-primary" (click)="guardarMensaje()">Guardar</button>
+</div>

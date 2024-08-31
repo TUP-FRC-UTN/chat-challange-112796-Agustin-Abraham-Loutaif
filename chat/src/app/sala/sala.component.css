@@ -1,0 +1,13 @@
+.card{
+    margin: 5px;
+    max-height: 330px;
+    overflow-y: auto;
+}
+
+h6{
+    margin: 20px;
+    font-weight: normal;
+}
+
+.rojo{ color: red; }
+.azul{ color: blue; }
