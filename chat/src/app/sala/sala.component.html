@@ -1,0 +1,20 @@
+
+<div class="card">
+    <div class="card-header"> Sala de chat </div>
+    <h6> Conversacion </h6>
+    <hr>
+    <div>
+        @for (mensaje of chat; track mensaje) {
+            <p [ngClass]="definirClase(mensaje.User)" >{{mensaje.User}}: {{mensaje.Mensaje}}</p>
+        }
+    </div>    
+</div>
+<div class="row">
+    @for (user of users; track user) {
+        <div class="col-6">
+            <app-mensaje-usuario [user]="user" (mensaje)="onMensaje($event)"></app-mensaje-usuario>
+        </div>
+    }
+</div>
+
+
